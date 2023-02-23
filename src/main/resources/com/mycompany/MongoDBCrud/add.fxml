@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="710.0" prefWidth="974.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.MongoDBCrud.AddController">
+	<children>
+		<HBox alignment="CENTER" prefHeight="50.0" prefWidth="1052.0" style="-fx-background-color: #81caff;">
+			<children>
+				<Button fx:id="btnShow" focusTraversable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="380.0" style="-fx-background-color: #5ba760; -fx-background-radius: 0;" text="MOSTRAR" textFill="WHITE" HBox.hgrow="ALWAYS">
+					<font>
+						<Font name="Consolas Bold" size="24.0" />
+					</font>
+				</Button>
+				<Button fx:id="btnModify" focusTraversable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="380.0" style="-fx-background-color: #5ba760; -fx-background-radius: 0;" text="MODIFICAR" textFill="WHITE" HBox.hgrow="ALWAYS">
+					<font>
+						<Font name="Times New Roman Bold" size="24.0" />
+					</font>
+				</Button>
+			</children>
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</HBox>
+		<HBox alignment="TOP_CENTER" prefHeight="450.0" prefWidth="1140.0">
+			<children>
+            <VBox prefHeight="450.0" prefWidth="234.0">
+               <children>
+      				<Label id="lblEmpNo" alignment="TOP_LEFT" text="NUMERO EMPLEADO:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblApellido" alignment="TOP_LEFT" text="APELLIDO:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblOficio" alignment="TOP_LEFT" text="OFICIO:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblDir" alignment="TOP_LEFT" text="DIRECTOR:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblFechaAlt" alignment="TOP_LEFT" text="FECHA DE ALTA:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblSalario" alignment="TOP_LEFT" text="SALARIO:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblDeptNo" alignment="TOP_LEFT" text="NUMERO DEPARTAMENTO:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblDNombre" alignment="TOP_LEFT" text="NOMBRE DEPARTAMENTO:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+      				<Label id="lblLocalizacion" alignment="TOP_LEFT" text="LOCALIZACION:">
+      					<font>
+      						<Font name="System Bold" size="14.0" />
+      					</font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+      				</Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="450.0" prefWidth="381.0">
+               <children>
+      				<TextField id="txtEmpNo" fx:id="txtEmpNo">
+      					<opaqueInsets>
+      						<Insets />
+      					</opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" top="20.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtApellido" fx:id="txtApellido">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtOficio" fx:id="txtOficio">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtDir" fx:id="txtDir">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtFechaAlt" fx:id="txtFechaAlt">
+      					<opaqueInsets>
+      						<Insets />
+      					</opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtSalario" fx:id="txtSalario">
+      					<opaqueInsets>
+      						<Insets />
+      					</opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtDeptNo" fx:id="txtDeptNo">
+      					<opaqueInsets>
+      						<Insets />
+      					</opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtDNombre" fx:id="txtDNombre">
+      					<opaqueInsets>
+      						<Insets />
+      					</opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+      				<TextField id="txtLocalizacion" fx:id="txtLoc">
+      					<opaqueInsets>
+      						<Insets />
+      					</opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+      				</TextField>
+               </children>
+            </VBox>
+			</children>
+			<VBox.margin>
+				<Insets top="20.0" />
+			</VBox.margin>
+		</HBox>
+		<HBox fx:id="navAdd" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+			<children>
+				<Button fx:id="btnCancel" mnemonicParsing="false" onMouseEntered="#btnCancelOver" onMouseExited="#btnCancelOut" prefHeight="53.0" prefWidth="203.0" style="-fx-background-color: #da1e1e;" text="CANCELAR" textFill="WHITE">
+					<HBox.margin>
+						<Insets right="200.0" />
+					</HBox.margin>
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Button>
+				<Button fx:id="btnAccept" mnemonicParsing="false" onMouseEntered="#btnAcceptOver" onMouseExited="#btnAcceptOut" prefHeight="53.0" prefWidth="203.0" style="-fx-background-color: #5ba760;" text="ACEPTAR" textFill="WHITE">
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Button>
+			</children>
+		</HBox>
+	</children>
+	<cursor>
+		<Cursor fx:constant="DEFAULT" />
+	</cursor>
+</VBox>
